@@ -1,0 +1,26 @@
+<DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="images/favicon.ico" rel="shortcut icon">
+	<title>Dr Karls Blog</title>
+</head>
+
+<body>
+	<div class="container">
+	<h1>My From Scratch Blog</h1>
+	{% for p in post %}
+		<div class="post">
+			<h2>{{ p.title }}</h2>
+			<h3>Posted on {{ p.timestamp }} by {{ p.author }}</h3>
+			<p>{{ p.bodytext }}</p>
+			<hr/>
+		</div>
+	{%endfor%}
+	</div>
+</body>
+
+</html>

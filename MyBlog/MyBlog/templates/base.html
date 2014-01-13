@@ -1,0 +1,64 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="utf-8">
+            <title>
+                {% block title %}{% endblock %}
+            </title>
+            <link  type="text/css" rel="stylesheet" href="{% static 'css/style.css'%}">
+            <link  type="text/css" rel="stylesheet" href="{% static 'css/spacing.css'%}">
+            <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+            <script type="text/javascript" src="{% static 'js/blogScript.js' %}"></script>-->
+        </head>
+        <body>
+            <div id="head">
+                <div class="wrapper">
+                    <div class="header">
+                        <a href="/" class="title"></a>
+                        <div>
+                            <div class="subtitle"></div>
+                            <div class="disclaimer"></div>
+                        </div>
+                    </div>
+                    <div class="headerExtender"></div>
+                </div>
+                
+                <div class="nav">
+                    <ul>
+                        <li>
+                        <a class="navLink" href="/About.html">tech blog</a>
+                        </li>
+                        <li>
+                            <a class="navLink" href="/About.html">life blog</a>
+                        </li>
+                        <li>
+                            <a class="navLink" href="/About.html">about</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="spacer top100 height10"></div>
+
+            <div id="body">
+
+                <!-- <div class="leftColumn">
+                </div> -->
+
+                <div class="content">
+                    {% block content %}
+                    {% endblock %}
+                </div>
+
+                <!-- <div class="rightColumn">
+                </div> -->
+            </div>
+            <div class="center copyright spacerWithPin height40">
+                <span>There is no copyright, these are my thoughts and methods that I have derived from researching online</span><br/>
+                <span>Use what you wish</span>
+            </div>
+        </body>
+    </html>

@@ -1,0 +1,247 @@
+/*Setup Styles*/
+
+@font-face{
+    font-family: siteFont;
+    src: url("ChangaOne/ChangaOne-Regular.ttf");
+}
+
+html{
+    background-color: #D9EFB6;
+    background-image: url("../Images/background.png");
+    background-repeat: repeat;
+}
+
+body{
+    background-color: #fbfbfb;
+    color: #2e2e2e;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 28px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    overflow: scroll
+}
+
+#head {
+    display:block;
+}
+
+#body {
+    background-color: #FBFBFB;
+    /*background-image: url("../Images/background.png");
+    background-repeat: repeat;*/
+    display: block;
+    min-height: 300px;
+    position: fixed;
+    top: 200px;
+    width: 100%;
+}
+
+div.header{
+    background-color: #27B31F;
+    background-image: url("../Images/header.jpeg");
+    background-position: initial;
+    background-repeat: no-repeat;
+    height: 100px;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 900px;
+    z-index: 1;
+}
+
+div.headerExtender{
+    background-color: #27B31F;
+    background-position: initial;
+    background-image: url("../Images/header-extender.jpeg");
+    background-repeat: repeat;
+    position: fixed;
+    height: 100px;
+    left:900px;
+    top:0px;
+    width: 100%; 
+}
+ 
+div.header a.title{
+    background-image: url("../Images/SiteTitle.jpeg");
+    background-position: initial;
+    background-repeat: no-repeat;
+    height: 100px;
+    left: 0;
+    position: fixed;
+    top: -5px;
+    width: 500px;
+}
+div.header div.subtitle{ 
+    background-image: url("../Images/SubTitle.jpeg");
+    background-position: initial;
+    background-repeat: no-repeat;
+    height: 100px;
+    left: 600px;
+    position: fixed;
+    top: 3px;
+    width: 500px;
+}
+
+div.header div.disclaimer{ 
+    background-image: url("../Images/Disclaimer.jpeg");
+    background-position: initial;
+    background-repeat: no-repeat;
+    height: 100px;
+    left: 910px;
+    position: fixed;
+    top: 0px;
+    width: 500px;
+}
+
+.wrapper{
+}
+
+.spacer{
+    background-color: #404040;
+    position: fixed;
+    width: 100%;    
+}
+
+.postSpacer{
+    background-color: #404040;
+    width: 100%;       
+}
+
+.spacerWithPin{
+    background-color: #404040;
+    background-image: url("../Images/background2.jpeg");
+    background-repeat: repeat;
+    position: fixed;
+    width: 100%;    
+}
+
+/*Navigation Styles*/
+
+div.nav {
+    background-color: #D9EFB6;
+    background-image: url("../Images/background.png");
+    background-repeat: repeat;
+    font-size: 20px;
+    font-family: siteFont;
+    display: block;
+    height: 50px;
+    position: fixed;
+    top: 125px;
+    width: 100%;
+}
+
+div.nav ul {
+    display: inline-block;
+    float: left;
+    height:auto;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+}
+
+div.nav ul a:link{
+    color: #2A807D;
+    text-decoration: none;
+}
+
+div.nav ul a:link:hover{
+    color: #0E5350;
+    text-decoration: none;
+}
+
+div.nav ul li{
+    display: inline;
+    padding:100px;
+}
+
+/*Content Blocks Styles*/
+
+div.leftColumn {    
+    background-color: #FBFBFB;
+    border: 1px solid #404040;
+    float: left;
+    height: 702px;
+    margin: 0 auto 10px;
+    width: 17.2%;
+}
+
+div.rightColumn {    
+    background-color: #FBFBFB;
+    border: 1px solid #404040;
+    float: left;
+    height: 702px;
+    margin: 0 auto 10px;
+    width: 17.2%;
+}
+
+div.content{
+    background-color: #FFFFFF;
+    border: 1px solid #FBFBFB;
+    margin: 0px auto;
+    min-height: 700px;
+    width: 65%;
+}       
+
+div.innerContent{
+    padding: 2%;
+}
+
+div.sectionTitle{
+    background-color: #3C001A;
+    border: 1px solid #404040;
+    border-bottom-right-radius: 34px;
+    color: #FBFBFB;
+    padding: 1%;
+    text-align: center;
+    width: 98%;
+}
+
+div.sectionTitle h1{
+    padding: 15px;    
+    text-transform: uppercase;
+}
+
+div.copyright{
+    color: #FFFFFF;
+    line-height: 1.4;
+    position: fixed;
+    text-align: center;
+    top: 900px;
+    width: 100%;
+}
+
+/*Post Styles*/
+
+div.post{
+    display: block;
+}
+
+div.postTitle{
+    padding-top: 10px;
+    line-height: 1.1;
+}
+
+div.postTitle h2{
+    margin:0 0;
+    padding: 0 0;
+}
+
+div.postTitle .postSubTitle{
+    font-size: 10px;
+    padding-left: 10px;
+    color:#606060;
+}
+
+/*Link Styles*/
+
+a.blogLink:link{
+    color: #002C27;
+    text-decoration: none;    
+}
+a.blogLink:link:hover{
+    color: #149386;
+}
